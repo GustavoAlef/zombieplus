@@ -1,5 +1,5 @@
 module.exports = {
-    'login com sucesso': function(browser){
+    'login com sucesso': (browser) => {
         browser
         .url('http://zombie-web:5000/login')
         .waitForElementVisible('.card-login', 2000)
