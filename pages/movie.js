@@ -5,7 +5,7 @@ var createActions = {
     cast.forEach(function(actor) {
       browser
         .setValue("@inputCast", actor)
-        .api.sendkeys(browser.api.sendkeys('TAB'))
+        .api.keys(browser.api.keys.TAB)
     })
 
     return this
@@ -22,6 +22,8 @@ module.exports = {
     commands: [createActions],
     elements: {
     btnAdd: ".movie-add",
+    inputSearch: "input[placeholder^=Pesquisar",
+    searchIcon: "#search-movie",
     formMovie: "#movie-form",
     inputTitle: "input[name=title]",
     inputStatus: "input[placeholder=Status]",
@@ -31,6 +33,7 @@ module.exports = {
     inputSinopse: "textarea[name=overview]",
     imgCover: '#upcover',
     btnCadastrar: "#create-movie",
-    listFilm: "table tbody"
+    listFilm: "table tbody",
+    tableRow: "tbody > tr"
   }
 };
