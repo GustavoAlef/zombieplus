@@ -24,6 +24,7 @@ module.exports = {
     btnAdd: ".movie-add",
     inputSearch: "input[placeholder^=Pesquisar",
     searchIcon: "#search-movie",
+    alertDanger: ".alert-danger",
     formMovie: "#movie-form",
     inputTitle: "input[name=title]",
     inputStatus: "input[placeholder=Status]",
