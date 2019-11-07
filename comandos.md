@@ -19,6 +19,7 @@ sudo vim /etc/hosts
 127.0.0.1   pgdb
 127.0.0.1   zombie-api
 127.0.0.1   zombie-web
+127.0.0.1   jenkins
 
 >img api
 ​docker pull papitoio/zombie-api
@@ -35,6 +36,7 @@ docker start pgdb
 docker start pgadmin
 ​docker start zombie-api
 ​docker start zombie-web
+docker start jenkins
 
 >Se alguma coisa der errado...
 docker network rm skynet - remove a rede
@@ -42,3 +44,8 @@ docker rm -f ​pgdb
 docker rm -f ​pgadmin
 docker rm -f ​zombie-api
 docker rm -f ​zombie-web
+
+>entrando e desbloqueando o container do jenkins
+*lembrar de renomear o container se precisar
+sudo docker exec -it jenkins bash
+-pegar o endereço mostrado no navegador, colar usando o cat. entao obtem-se um hash, copiar e colar la no navegador.
