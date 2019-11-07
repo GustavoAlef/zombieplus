@@ -5,7 +5,7 @@ var createActions = {
     cast.forEach(function(actor) {
       browser
         .setValue("@inputCast", actor)
-        .api.keys(browser.api.keys.TAB)
+        .api.keys(browser.api.Keys.TAB)
     })
 
     return this

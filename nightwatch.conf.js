@@ -27,19 +27,19 @@ module.exports = {
     },
 
     headless: {
-        launch_url: url,
-        webdriver: {
-          server_path: chromedriver.path,
-          port: 9515
-        },
-        desiredCapabilities: {
-          browserName: "chrome",
-          chromeOptions:{
-              w3c: false,
-              args: ['--headless', '--no-sandbox']
-          }
-        }
+      launch_url: url,
+      webdriver: {
+        server_path: chromedriver.path,
+        port: 9515
       },
+      desiredCapabilities: {
+        browserName: "chrome",
+        chromeOptions: {
+          w3c: false,
+          args: ["--headless", "--no-sandbox"]
+        }
+      }
+    },
 
     firefox: {
       launch_url: url,
