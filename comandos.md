@@ -49,3 +49,14 @@ docker rm -f ​zombie-web
 *lembrar de renomear o container se precisar
 sudo docker exec -it jenkins bash
 -pegar o endereço mostrado no navegador, colar usando o cat. entao obtem-se um hash, copiar e colar la no navegador.
+
+>iniciando container do jenkins
+docker run \
+  -u root \
+  --rm \
+  -d \
+  -p 8080:8080 \
+  -p 50000:50000 \
+  -v jenkins-data:/var/jenkins_home \
+  -v /var/run/docker.sock:/var/run/docker.sock \
+  jenkinsci/blueocean
