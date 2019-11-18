@@ -26,7 +26,7 @@ module.exports = {
 
         pgmovie
         .click('@btnAdd')
-        .waitForElementVisible('@formMovie', 2000)
+        .waitForElementVisible('@formMovie', 10000)
         .setValue('@inputTitle', movieData.title)
         .click('@inputStatus')
         .useXpath()
@@ -46,7 +46,7 @@ module.exports = {
     'então eu devo ver o filme na lista': function(browser){
         let pgmovie = browser.page.movie(); 
         pgmovie
-            .waitForElementVisible('@listFilm', 2000)
+            .waitForElementVisible('@listFilm', 10000)
             .assert.containsText('@listFilm', movieData.title)
     }
 }
