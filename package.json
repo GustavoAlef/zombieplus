@@ -7,10 +7,11 @@
     "test:busca": "nightwatch --group busca --env=headless",
     "test:firebusca": "nightwatch --group busca --env=firefox",
     "test:nobusca": "nightwatch --skipgroup busca",
-    "test": "nightwatch"
+    "test": "nightwatch",
+    "test:ci": "nightwatch --env=headless"
   },
   "keywords": [],
-  "author": "",
+  "author": "Gustavo Alef",
   "license": "ISC",
   "devDependencies": {
     "babel-cli": "^6.26.0",
