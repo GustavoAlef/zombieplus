@@ -8,7 +8,7 @@
     "test:firebusca": "nightwatch --group busca --env=firefox",
     "test:nobusca": "nightwatch --skipgroup busca",
     "test": "nightwatch",
-    "test:ci": "nightwatch --group login --env=headless"
+    "test:ci": "nightwatch --group cadastro --env=headless"
   },
   "keywords": [],
   "author": "Gustavo Alef",
