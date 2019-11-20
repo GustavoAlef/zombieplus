@@ -1,4 +1,5 @@
 module.exports = {
+    '@tags': ['jenkins'],
     'login com sucesso': (browser) => {
         browser
         .url('http://zombie-web:5000/login')

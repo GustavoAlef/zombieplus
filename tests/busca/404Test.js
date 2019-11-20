@@ -1,4 +1,5 @@
 module.exports = {
+  '@tags': ['jenkins'],
   before: function(browser) {
     let pglogin = browser.page.login();
     pglogin.with("karol@email.com", "asd");

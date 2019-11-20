@@ -2,7 +2,7 @@ import pg from '../../lib/db'
 let movieData = {}
 
 module.exports = {
-
+    '@tags': ['jenkins'],
     before: function(browser){
         movieData = {
             title: 'Resident Evil',
