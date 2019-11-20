@@ -2,6 +2,7 @@ module.exports = {
     '@tags': ['jenkins'],
     'login com sucesso': (browser) => {
         browser
+        .maximizeWindow()
         .url('http://zombie-web:5000/login')
         .waitForElementVisible('.card-login', 10000)
         .setValue('input[name=email]', 'karol@email.com')
